@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>App Previsao tempo</title>
+</head>
+<body>
+  <main class="main-container">
+    <header class="input-container">
+      <input class="input-city" type="text" placeholder="Busca Cidade">
+      <button class="btn-search">
+        <ion-icon name="search-outline"></ion-icon>
+      </button>
+    </header>
+
+    <section class="wather-info" style="display: none;">
+
+      <div class="location-date-container">
+        <div class="location">
+          <ion-icon name="location-outline"></ion-icon>
+          <h4 class="country">Araguaina</h4>
+        </div>
+        <h5 class="current-date regular-text">Qui, 23 Jan</h5>
+      </div>
+
+      <div class="weather-sumary-container">
+        <img class="weather-sumary-img" src="assets/weather/clouds.svg" alt="clouds">
+        <div class="weather-sumary-info">
+          <h1 class="temp">29° C</h1>
+          <h3 class="condition regular-text">Nuvens</h3>
+        </div>
+      </div>
+
+      <div class="weather-conditions-container">
+        <div class="condition-item">
+          <ion-icon name="water-outline"></ion-icon>
+          <div class="condition-info">
+            <h5 class="regular-text">Umidade</h5>
+            <h5 class="humidity-value">55%</h5>
+          </div>
+        </div>
+        <div class="condition-item">
+          <ion-icon name="rainy-outline"></ion-icon>
+          <div class="condition-info">
+            <h5 class="regular-text">Vento</h5>
+            <h5 class="wind-value">2 M/s</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="search-city section-message">
+      <img src="assets/message/search-city.png" alt="search-city">
+      <div>
+        <h1>Buscar Cidade</h1>
+        <h4 class="regular-text">Descubra as condições climáticas da sua cidade</h4>
+      </div>
+    </section>
+
+    <section class="not-found section-message" style="display: none;">
+      <img src="assets/message/not-found.png" alt="search-city">
+      <h1>Pagina não Encontrada</h1>
+    </section>
+  </main>
+  <script src="main.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
